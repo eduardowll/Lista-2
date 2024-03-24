@@ -22,6 +22,6 @@ int main()
     if(anocarro < 1990){
         cout << "O imposto à ser pago é de: " << (prcarro * 0.01) + prcarro << " R$";
     }else{
-        cout << "O imposto à ser pago é de: " << (prcarro * 0.15) + prcarro << " R$";
+        cout << "O imposto à ser pago é de: " << (prcarro * 0.015) + prcarro << " R$";
     }
 }
