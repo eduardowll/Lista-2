@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+/*
+A escola “APRENDER” faz o pagamento de seus professores por hora/aula. Faça um algoritmo que calcule
+e escreva o salário de um professor, sabendo que o valor da hora/aula segue a tabela abaixo:
+Professor nível 1 | R$ 12,00 por hora aula
+Professor nível 2 | R$ 17,00 por hora aula
+Professor nível 3 | R$ 25,00 por hora aula 
+*/
+
+int main()
+{
+    int nivel;
+    int horasmensais;
+    
+    cout << "Escola APRENDER - Divisão de salários.\n";
+    cout << "Professor nível 1 | R$ 12,00 por hora aula\n";
+    cout << "Professor nível 2 | R$ 17,00 por hora aula\n";
+    cout << "Professor nível 3 | R$ 25,00 por hora aula\n";
+    cout << "Qual seu nível?: ";
+    cin >> nivel;
+    cout << "Quantas horas mensais você trabalhou nesse mês?: ";
+    cin >> horasmensais;
+    
+    if(nivel == 1){
+       cout << "Seu salário esse mês será de: " << horasmensais * 12 << " R$";
+    }    if(nivel == 2){
+            cout << "Seu salário esse mês será de: " << horasmensais * 17 << " R$";
+        }    if(nivel == 3){
+                cout << "Seu salário esse mês será de: " << horasmensais * 25 << " R$";
+            }    
+}
