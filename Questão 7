@@ -1,0 +1,69 @@
+#include <iostream>
+using namespace std;
+
+/*
+O cardápio de uma lanchonete é o seguinte:
+Sanduíche
+Código      Descrição       Preço Unitário
+100     Cachorro quente     1,10
+101     Baurú simples       1,30
+102     Baurú com ovo       1,50
+103     Hamburger           1,10
+104     Cheesburger         1,30
+Bebida
+Código Descrição Preço Unitário
+105     Refrigerante    1,00
+106     Suco            2,00
+107     Nescau          1,50
+Escreva um algoritmo que leia o código dos itens pedidos (um sanduiche e uma bebida) e a quantidade
+de cada um e calcule o valor a ser pago por aquele lanche. 
+*/
+
+int main()
+{
+    int codsandu, codbebida, qntd;
+    double preco = 0, precosandu, precobebi;
+    
+    cout << "CARDÁPIO - LANCHONETE\n";
+    cout << "Código      Descrição       Preço Unitário\n";
+    cout << "100     Cachorro quente     1,10\n";
+    cout << "101     Baurú simples       1,30\n";
+    cout << "102     Baurú com ovo       1,50\n";
+    cout << "103     Hamburger           1,10\n";
+    cout << "104     Cheesburger         1,30\n";
+    cout << "105     Refrigerante        1,00\n";
+    cout << "106     Suco                2,00\n";
+    cout << "107     Nescau              1,50\n";
+    
+    cout << "Qual o código do seu sanduiche?: ";
+    cin >> codsandu;
+    cout << "Qual o código da sua bebida?: ";
+    cin >> codbebida;
+    
+    if(codsandu == 100){
+        precosandu = preco + 1.10;
+    }
+        if(codsandu == 101){
+            precosandu = preco + 1.30;
+        }
+            if(codsandu == 102){
+                precosandu = preco + 1.50;
+            }
+                if(codsandu == 103){
+                    precosandu = preco + 1.10;
+                }
+                    if(codsandu == 104){
+                        precosandu = preco + 1.30;
+                    }
+                        if(codbebida == 105){
+                            precobebi = preco + 1.00;
+                        }
+                            if(codbebida == 106){
+                                precobebi = preco + 2.00;
+                            }
+                                if(codbebida == 107){
+                                    precobebi = preco + 1.50;
+                                }
+    
+    cout << "Seu combo deu: " << precobebi + precosandu << " R$";
+}
