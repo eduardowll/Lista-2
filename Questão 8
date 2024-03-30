@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+/*
+Elabore um algoritmo que leia um número inteiro e uma letra (“a” – antecessores ou “s” – sucessores) e 
+mostre a soma dos seus próximos 10 antecessores ou sucessores de acordo com a letra digitada.  
+*/
+
+int main()
+{
+    int num;
+    char letra;
+    
+    cout << "Digite um número inteiro: ";
+    cin >> num;
+    cout << "Digite “a” – antecessores ou “s” – sucessores: ";
+    cin >> letra;
+    
+    if(letra == 'a'){
+       cout << "A soma dos 10 antecessores de " << num << " é igual a: " << (num - 1) + (num - 2) + (num - 3) + (num - 4) + (num - 5) + (num - 6) + (num - 7) + (num - 8) + (num - 9) + (num - 10);
+    }else{
+       cout << "A soma dos 10 sucessores de " << num << " é igual a: " << (num + 1) + (num + 2) + (num + 3) + (num + 4) + (num + 5) + (num + 6) + (num + 7) + (num + 8) + (num + 9) + (num + 10);
+    }
+}
