@@ -21,7 +21,7 @@ de cada um e calcule o valor a ser pago por aquele lanche.
 
 int main()
 {
-    int codsandu, codbebida, qntd;
+    int codsandu, codbebida, qntdsandu, qntdbebi;
     double preco = 0, precosandu, precobebi;
     
     cout << "CARDÁPIO - LANCHONETE\n";
@@ -37,32 +37,36 @@ int main()
     
     cout << "Qual o código do seu sanduiche?: ";
     cin >> codsandu;
+    cout << "Qual a quantidade de sanduiches?: ";
+    cin >> qntdsandu;
     cout << "Qual o código da sua bebida?: ";
     cin >> codbebida;
+    cout << "Qual a quantidade de bebidas?: ";
+    cin >> qntdbebi;
     
     if(codsandu == 100){
-        precosandu = preco + 1.10;
-    }
+        precosandu = preco + (1.10*qntdsandu);
+    }                                  
         if(codsandu == 101){
-            precosandu = preco + 1.30;
+            precosandu = preco + (1.30*qntdsandu);
         }
             if(codsandu == 102){
-                precosandu = preco + 1.50;
+                precosandu = preco + (1.50*qntdsandu);
             }
                 if(codsandu == 103){
-                    precosandu = preco + 1.10;
+                    precosandu = preco + (1.10*qntdsandu);
                 }
                     if(codsandu == 104){
-                        precosandu = preco + 1.30;
+                        precosandu = preco + (1.30*qntdsandu);
                     }
                         if(codbebida == 105){
-                            precobebi = preco + 1.00;
+                            precobebi = preco + (1.00*qntdbebi);
                         }
                             if(codbebida == 106){
-                                precobebi = preco + 2.00;
+                                precobebi = preco + (2.00*qntdbebi);
                             }
                                 if(codbebida == 107){
-                                    precobebi = preco + 1.50;
+                                    precobebi = preco + (1.50*qntdbebi);
                                 }
     
     cout << "Seu combo deu: " << precobebi + precosandu << " R$";
